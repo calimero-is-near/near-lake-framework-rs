@@ -306,7 +306,7 @@ fn stream_block_heights<'a: 'b, 'b>(
                 Err(err) => {
                     tracing::warn!(
                         target: LAKE_FRAMEWORK,
-                        "Failed to get block heights from bucket {}: {}. Retrying in 1s...",
+                        "Failed to get block heights from bucket {}: {:#?}. Retrying in 1s...",
                         s3_bucket_name,
                         err,
                     );
